@@ -141,5 +141,5 @@ To do this:
 <img width="684" alt="Screenshot 2025-01-23 at 1 00 57 PM" src="https://github.com/user-attachments/assets/10ac4f58-82c4-4d72-adc6-d5193358128f" />
 <img width="513" alt="Screenshot 2025-01-23 at 1 01 21 PM" src="https://github.com/user-attachments/assets/8204ce0e-db7e-4b70-a625-01950ef3de5c" />
 
-<h2>Purpose of This Repository</h2>
+<h2>Purpose </h2>
 This repository serves as a practical guide and example of the lifecycle of a ticket within the osTicket system. By following these steps, users can better understand ticket creation, assignment, and resolution workflows in a help desk environment.
