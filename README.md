@@ -3,12 +3,12 @@
 </p>
 
 <h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
 
+This document provides a step-by-step guide to creating and managing tickets within the osTicket system to demonstrate their lifecycle. Each scenario includes steps for creating tickets, observing their properties, setting their attributes, and working them to completion.
 
-<h2>Video Demonstration</h2>
+Admin/Analyst Login Page: [Admin Login](http://localhost/osTicket/scp/login.php)
 
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
+End Users osTicket URL: [End Users Ticketing Page](http://localhost/osTicket)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -27,28 +27,77 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 - Working the Issue
 - Resolution
 
-<h2>Lifecycle Stages</h2>
+<h2>Scenarios</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h3> Scenario 1: Entire Mobile/Online Banking System is Down</h3>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+**As an End-User**
+- Navigate to the End Users osTicket URL: [http://localhost/osTicket](http://localhost/osTicket)
+- Log in as an end-user.
+- Create a new ticket with the following details:
+  - Subject: Entire Mobile/Online Banking System is Down
+  - Details: Provide a brief description of the issue.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+**As a Help Desk Agent (John)**
+- Navigate to the Admin/Analyst Login Page: http://localhost/osTicket/scp/login.php
+- Log in as "john."
+- Locate the newly created ticket and observe its properties:
+  - Priority
+  - Department
+  - SLA
+  - Assigned To
+- Set the ticket properties as follows:
+  - Priority: Sev-A (1 hour, 24/7)
+  - Department: Online Banking Department
+- Attempt to observe the ticket again as "john" and note whether you can view or change it.
+
+**As a Help Desk Agent (Jane)**
+- Log in as "jane."
+- Work the ticket to completion.
+
+<h3>Scenario 2: Accounting Department Needs Adobe Upgrade, Broken</h3>
+
+**As an End-User**
+- Navigate to the End Users osTicket URL: http://localhost/osTicket
+- Log in as an end-user.
+- Create a new ticket with the following details:
+  - Subject: Accounting Department Needs Adobe Upgrade, Broken
+  - Details: Provide a brief description of the issue.
+
+**As a Help Desk Agent (John)**
+- Navigate to the Admin/Analyst Login Page: http://localhost/osTicket/scp/login.php
+- Log in as "John."
+- Locate the newly created ticket and observe its properties:
+  - Priority
+  - Department
+  - SLA
+  - Assigned To
+- Set the ticket properties as follows:
+  - Priority: Sev-B (4 hours, 24/7)
+  - Department: Support
+- Work the ticket to completion.
+
+<h3>Scenario 3: CFO’s Laptop Will No Longer Turn On</h3>
+
+**As an End-User**
+- Navigate to the End Users osTicket URL: http://localhost/osTicket
+- Log in as an end-user.
+- Create a new ticket with the following details:
+  - Subject: CFO’s Laptop Will No Longer Turn On
+  - Details: Provide a brief description of the issue.
+
+**As a Help Desk Agent (John)**
+- Navigate to the Admin/Analyst Login Page: http://localhost/osTicket/scp/login.php
+- Log in as "John."
+- Locate the newly created ticket and observe its properties:
+  - Priority
+  - Department
+  - SLA
+  - Assigned To
+- Set the ticket properties as follows:
+  - Priority: Sev-B (4 hours, 24/7)
+  - Department: Support
+- Work the ticket to completion.
+
+<h2>Purpose of This Repository</h2>
+This repository serves as a practical guide and example of the lifecycle of a ticket within the osTicket system. By following these steps, users can better understand ticket creation, assignment, and resolution workflows in a help desk environment.
